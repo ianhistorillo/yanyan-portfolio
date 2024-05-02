@@ -1,0 +1,65 @@
+@import "../_colors.scss";
+@import "../_media_query.scss";
+
+.header {
+  h1 {
+    font-size: 4.5rem;
+    background: linear-gradient(to right, #ffec3f, #fff 35%, red);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s linear infinite;
+  }
+}
+.greetings {
+  font-size: 1.5rem;
+  color: $white;
+  margin-bottom: 3rem;
+  @include mobile-sm {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    text-align: center;
+  }
+}
+
+.content {
+  width: 60%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: start;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  word-spacing: 2px;
+
+  .paragraph-text {
+    font-size: 1.25rem;
+    color: #f1f8cf;
+  }
+}
+
+.phFlag {
+  display: inline-block;
+  width: 25px;
+  .st0 {
+    fill: #fcd116;
+  }
+  .st1 {
+    fill: none;
+    stroke: #cccccc;
+    stroke-width: 0.4799;
+    stroke-miterlimit: 22.9256;
+  }
+  .st2 {
+    fill: #ffffff;
+  }
+  .st3 {
+    fill: #ce1126;
+  }
+  .st4 {
+    fill: #0038a8;
+  }
+}

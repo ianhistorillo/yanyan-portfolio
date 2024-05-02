@@ -1,0 +1,54 @@
+@import "_media_query.scss";
+
+/** layout widths */
+.i- {
+  &col100 {
+    width: 100%;
+  }
+  &col90 {
+    width: 90%;
+  }
+  &col80 {
+    width: 80%;
+  }
+  &col70 {
+    width: 70%;
+  }
+  &col60 {
+    width: 60%;
+  }
+  &col50 {
+    width: 50%;
+  }
+  &col40 {
+    width: 40%;
+  }
+  &col30 {
+    width: 30%;
+  }
+  &col25 {
+    width: 25%;
+  }
+  &col20 {
+    width: 20%;
+  }
+  &col10 {
+    width: 10%;
+  }
+  &fl {
+    float: left;
+  }
+  &fr {
+    float: right;
+  }
+  &container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  &clr {
+    clear: both;
+  }
+}
