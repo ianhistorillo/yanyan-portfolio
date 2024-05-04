@@ -1,7 +1,9 @@
+@import "../_fonts.scss";
 @import "../_colors.scss";
 @import "../_media_query.scss";
 
 .header {
+  @include font-apercu-light;
   h1 {
     font-size: 4.5rem;
     background: linear-gradient(to right, #ffec3f, #fff 35%, red);
@@ -12,10 +14,11 @@
     animation: gradient 3s linear infinite;
   }
 }
+
 .greetings {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: $white;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
   @include mobile-sm {
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -25,25 +28,50 @@
 }
 
 .content {
-  width: 60%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: start;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  line-height: 1.2;
-  word-spacing: 2px;
+  font-size: 2.5rem;
+  color: $white;
+  line-height: 1.5;
+  margin-bottom: 6rem;
 
-  .paragraph-text {
-    font-size: 1.25rem;
+  .bold {
+    @include font-apercu-medium;
     color: #f1f8cf;
+  }
+}
+
+.get-in-touch {
+  font-size: 1.5rem;
+  color: $white;
+  line-height: 1.5;
+
+  .email-add {
+    color: #f1f8cf;
+    text-decoration: underline;
+  }
+
+  .social-profile {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1rem;
+
+    a {
+      margin-right: 1rem;
+      font-size: 2rem;
+      margin-right: 1.5rem;
+      color: #f1f8cf;
+      svg {
+        width: 1em;
+        height: 1em;
+      }
+    }
   }
 }
 
 .phFlag {
   display: inline-block;
-  width: 25px;
+  width: 50px;
   .st0 {
     fill: #fcd116;
   }

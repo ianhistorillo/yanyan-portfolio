@@ -1,4 +1,7 @@
+@import "../main";
+
 .navigation {
+  @include font-apercu-light;
   position: fixed;
   top: 90%;
   left: 50%;
