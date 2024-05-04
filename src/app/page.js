@@ -46,7 +46,7 @@ export default function Home() {
        <div className="i-col50">TEST</div>
          <div className="i-col50">TEST</div>
          <div className="i-col50">TEST</div> */}
-        <Navigation />
+        <Navigation activePage="Home" />
       </div>
     </div>
   );

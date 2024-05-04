@@ -7,7 +7,7 @@ import Skills from "../Icons/Skills";
 const NavItem = (props) => {
   return (
     <a
-      className={`nav-icon ${props.active === "true" ? "active" : null}`}
+      className={`nav-icon ${props.active === props.name ? "active" : null}`}
       href={props.route}
       aria-current="page"
     >
