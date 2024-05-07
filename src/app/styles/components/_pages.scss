@@ -13,6 +13,74 @@
     -webkit-text-fill-color: transparent;
     animation: gradient 3s linear infinite;
   }
+  &-title {
+    font-size: 2.5rem;
+    color: $white;
+    margin-bottom: 0;
+  }
+
+  .side-nav {
+    @include font-apercu-regular;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    width: 50%;
+    margin-top: 1rem;
+
+    div {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      cursor: pointer;
+
+      &:hover {
+        span.line {
+          width: 4rem;
+          background-color: $white;
+        }
+        span.text {
+          color: $white;
+        }
+      }
+    }
+    /** active section **/
+    div.active > span.line {
+      width: 4rem;
+      height: 1px;
+      background-color: $white;
+    }
+
+    div.active > span.text {
+      padding-left: 1rem;
+      color: $white;
+    }
+    /** inactive section **/
+    div > span.line {
+      width: 2rem;
+      height: 1px;
+      background-color: rgba($white, 0.5);
+
+      &.transition-all {
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.15s;
+      }
+    }
+
+    div > span.text {
+      padding-left: 1rem;
+      color: rgba($white, 0.5);
+      &:hover {
+        color: $white;
+      }
+    }
+  }
 }
 
 .greetings {
@@ -32,6 +100,17 @@
   color: $white;
   line-height: 1.5;
   margin-bottom: 6rem;
+
+  &-page {
+    @include font-apercu-light;
+    font-size: 1rem;
+    color: $white;
+
+    p {
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+  }
 
   .bold {
     @include font-apercu-medium;
