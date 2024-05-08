@@ -2,6 +2,16 @@
 @import "../_colors.scss";
 @import "../_media_query.scss";
 
+.flexi-header {
+  position: sticky;
+  max-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  top: 0;
+}
+
 .header {
   @include font-apercu-light;
   h1 {
@@ -105,6 +115,18 @@
     @include font-apercu-light;
     font-size: 1rem;
     color: $white;
+    margin-top: 20vh;
+    max-height: 55vh;
+    height: 55vh;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    #goals {
+      margin-top: 35%;
+    }
 
     p {
       line-height: 1.5;
