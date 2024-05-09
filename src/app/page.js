@@ -13,7 +13,6 @@ export default function Home() {
       <div className="i-col100 i-container">
         <div className="header">
           <div className="greetings">
-            {" "}
             Mabuhay! <Philippines />
           </div>
           <div className="content">
@@ -25,7 +24,6 @@ export default function Home() {
           <div className="get-in-touch">
             <span className="contact-me-text"> Contact me - </span>
             <span className="email-add">
-              {" "}
               <a href="mailto:ian.webworks@gmail.com">ian.webworks@gmail.com</a>
             </span>
             <div className="social-profile">

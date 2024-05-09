@@ -115,9 +115,9 @@
     @include font-apercu-light;
     font-size: 1rem;
     color: $white;
-    margin-top: 20vh;
-    max-height: 55vh;
-    height: 55vh;
+    margin-top: 35vh;
+    max-height: 50vh;
+    height: 50vh;
     overflow: auto;
 
     &::-webkit-scrollbar {
@@ -126,6 +126,87 @@
 
     #goals {
       margin-top: 35%;
+    }
+
+    #experience {
+      margin-top: 40%;
+
+      .experience-item {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+      }
+
+      .experience-year {
+        width: 40%;
+        color: rgba($white-variant1, 0.5);
+        letter-spacing: 0.025em;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        margin-top: 2px;
+
+        span {
+          vertical-align: middle;
+        }
+        span.dash {
+          width: 0.6rem;
+          height: 1px;
+          background-color: rgba($white-variant1, 0.5);
+          display: inline-block;
+          align-items: center;
+          vertical-align: middle;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+      }
+
+      .experience-company {
+        width: 60%;
+
+        h3 {
+          @include font-apercu-light;
+          font-size: 16px;
+          line-height: 1.375;
+          margin-bottom: 1rem;
+        }
+
+        .visit {
+          svg {
+            width: 18px;
+            padding-left: 3px;
+            vertical-align: bottom;
+          }
+        }
+
+        .experience-summary {
+          font-size: 14px;
+          color: rgba($white-variant1, 0.5);
+          line-height: 1.5;
+          margin-bottom: 1rem;
+        }
+      }
+
+      .experience-techstack {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        margin-top: 1rem;
+
+        .techstack-item {
+          width: auto;
+          margin-right: 1rem;
+          font-size: 12px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-left: 10px;
+          padding-right: 10px;
+          background-color: rgba($secondary, 0.4);
+          color: $secondary;
+          border-radius: 15px;
+          margin-bottom: 0.8rem;
+        }
+      }
     }
 
     p {
