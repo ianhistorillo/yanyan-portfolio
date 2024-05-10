@@ -10,11 +10,10 @@ import {
   scrollSpy,
 } from "react-scroll";
 
-const AboutHeader = () => {
+const ProjectSideNav = () => {
   // Function to handle the activation of a link.
   const handleSetActive = (activeElem) => {
     let prevActiveElement = document.querySelector("div.active");
-    console.log(prevActiveElement);
     const currActiveElement = document.getElementById(activeElem);
     prevActiveElement.classList.remove("active");
     currActiveElement.classList.add("active");
@@ -23,48 +22,34 @@ const AboutHeader = () => {
   return (
     <div className="i-col50 flexi-header">
       <div className="header">
-        <div className="header-title"> BACKGROUND </div>
+        <div className="header-title"> PROJECTS </div>
         <div className="side-nav">
           <Link
-            to="how-it-all-started"
-            containerId="parentElement"
+            to="featured-projects"
+            containerId="projectsElement"
             spy={true}
             smooth={true}
             offset={5}
             duration={500}
-            onClick={() => handleSetActive("nav-how-it-all-started")}
+            onClick={() => handleSetActive("nav-featured-projects")}
           >
-            <div id="nav-how-it-all-started" className="active">
+            <div id="nav-featured-projects" className="active">
               <span className="line transition-all"></span>
-              <span className="text"> How it all started? </span>
+              <span className="text"> Featured Works </span>
             </div>
           </Link>
           <Link
-            to="goals"
-            containerId="parentElement"
+            to="other-projects"
+            containerId="projectsElement"
             spy={true}
             smooth={true}
             offset={5}
             duration={500}
-            onClick={() => handleSetActive("nav-goals")}
+            onClick={() => handleSetActive("nav-other-projects")}
           >
-            <div id="nav-goals">
+            <div id="nav-other-projects">
               <span className="line transition-all"></span>
-              <span className="text"> Goals </span>
-            </div>
-          </Link>
-          <Link
-            to="experience"
-            containerId="parentElement"
-            spy={true}
-            smooth={true}
-            offset={5}
-            duration={500}
-            onClick={() => handleSetActive("nav-experience")}
-          >
-            <div id="nav-experience">
-              <span className="line transition-all"></span>
-              <span className="text"> Experience </span>
+              <span className="text"> Others </span>
             </div>
           </Link>
         </div>
@@ -73,4 +58,4 @@ const AboutHeader = () => {
   );
 };
 
-export default AboutHeader;
+export default ProjectSideNav;

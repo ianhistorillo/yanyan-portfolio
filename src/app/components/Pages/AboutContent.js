@@ -14,7 +14,7 @@ import Visit from "../Icons/Visit";
 
 const AboutContent = () => {
   return (
-    <div className="i-col50 i-fr">
+    <div className="i-col50 i-fr i-pd-top-10">
       <div id="parentElement" className="content-page">
         <Element id="how-it-all-started" name="how-it-all-started">
           <p>
@@ -70,9 +70,9 @@ const AboutContent = () => {
               </h3>
               <span className="experience-summary">
                 Build and maintain currrent in-house projects for flexisource
-                and to the new clients. Work closely with marketing team
-                including designers, content writer and SEO. Later on I've been
-                transferred to one of our client and become a Full-stack
+                and build websites for new clients. Work closely with marketing
+                team including designers, content writer and SEO. Later on I've
+                been transferred to one of our client and become a Full-stack
                 developer to helped them build their new applications and
                 maintain the existing one.
               </span>
@@ -102,7 +102,7 @@ const AboutContent = () => {
                 Build, style and maintain the current website feature and design
                 for our existing and new international clients. Collaborated
                 with multiple teams such as other developers, QA, DevOps, DB
-                management, scrum teams, software partners and BOC.
+                management, scrum teams, third party software partners and BOC.
               </span>
 
               <div className="experience-techstack">

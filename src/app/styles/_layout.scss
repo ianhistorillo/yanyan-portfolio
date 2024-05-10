@@ -54,4 +54,11 @@
   &clr {
     clear: both;
   }
+  &pd {
+    &-top {
+      &-10 {
+        padding-top: 10%;
+      }
+    }
+  }
 }

@@ -1,0 +1,25 @@
+"use client";
+
+import React, { useEffect } from "react";
+import "../styles/_main.scss";
+import "../styles/components/_navigation.scss";
+import "../styles/components/_pages.scss";
+
+// Main Page Navigation
+import Navigation from "../components/Navigation/Navigation";
+import ProjectSideNav from "../components/Pages/ProjectSideNav";
+import ProjectContent from "../components/Pages/ProjectContent";
+
+const Projects = () => {
+  return (
+    <div className="main">
+      <div className="i-col100 i-container-aboutpage">
+        <ProjectSideNav />
+        <ProjectContent />
+        <Navigation activePage="Projects" />
+      </div>
+    </div>
+  );
+};
+
+export default Projects;

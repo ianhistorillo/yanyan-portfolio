@@ -115,17 +115,20 @@
     @include font-apercu-light;
     font-size: 1rem;
     color: $white;
-    margin-top: 35vh;
-    max-height: 50vh;
-    height: 50vh;
+    max-height: 70vh;
+    height: 70vh;
     overflow: auto;
 
     &::-webkit-scrollbar {
       display: none;
     }
 
+    #how-it-all-started {
+      padding-top: 40%;
+    }
+
     #goals {
-      margin-top: 35%;
+      padding-top: 55%;
     }
 
     #experience {
@@ -139,7 +142,7 @@
       }
 
       .experience-year {
-        width: 40%;
+        width: 25%;
         color: rgba($white-variant1, 0.5);
         letter-spacing: 0.025em;
         font-size: 0.75rem;
@@ -162,7 +165,7 @@
       }
 
       .experience-company {
-        width: 60%;
+        width: 75%;
 
         h3 {
           @include font-apercu-light;
