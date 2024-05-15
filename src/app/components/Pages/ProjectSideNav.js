@@ -20,10 +20,10 @@ const ProjectSideNav = () => {
   };
 
   return (
-    <div className="i-col50 flexi-header">
+    <div className="i-col20 flexi-header">
       <div className="header">
         <div className="header-title"> PROJECTS </div>
-        <div className="side-nav">
+        <div className="side-nav projects-nav">
           <Link
             to="featured-projects"
             containerId="projectsElement"
