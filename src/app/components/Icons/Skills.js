@@ -6,8 +6,8 @@ const Skills = () => {
       stroke-width="0"
       viewBox="0 0 20 20"
       aria-hidden="true"
-      height="1em"
-      width="1em"
+      height="1.5rem"
+      width="1.5rem"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

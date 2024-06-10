@@ -10,30 +10,35 @@
 }
 
 .nav {
-  color: #fff;
+  color: $white-variant1;
   display: flex;
   justify-content: center;
   align-items: center;
 
   a {
     padding: 5px 1rem;
-    color: #fff;
+    color: $white-variant1;
     font-size: 16px;
     display: inline-block;
     line-height: 1.2;
     &.active {
-      color: #d9eb80;
+      svg {
+        fill: $secondary;
+      }
+      color: $secondary;
       font-weight: bolder;
+    }
+
+    svg {
+      fill: $white-variant1;
     }
   }
   &-container {
-    width: 400px;
+    width: auto;
     justify-content: space-between;
-    background: #203258;
-    border-radius: 2rem;
-    padding: 5px 25px 10px;
+    padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 }
@@ -43,4 +48,41 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.social-navigation {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+  color: $white-variant1;
+  ul {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    li {
+      padding: 10px;
+      svg {
+        width: 20px;
+        height: 20px;
+        &.feather {
+          fill: none;
+        }
+      }
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 90px;
+      margin: 0px auto;
+      background-color: $white-variant1;
+    }
+  }
 }

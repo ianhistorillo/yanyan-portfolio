@@ -82,6 +82,25 @@ body {
   overflow-x: hidden;
 }
 
+/* Flashlight Overlay */
+:root {
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+}
+:root:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 40vmax at var(--cursorX) var(--cursorY),
+    rgba(32, 50, 88, 0.504) 0%,
+    transparent 100%
+  );
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: $primary;

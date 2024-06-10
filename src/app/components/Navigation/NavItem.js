@@ -15,8 +15,8 @@ const NavItem = (props) => {
         {props.icon === "Home" ? <Home /> : null}
         {props.icon === "About" ? <About /> : null}
         {props.icon === "Projects" ? <Projects /> : null}
-        {props.icon === "Skills" ? <Skills /> : null}
-        <small>{props.name}</small>
+        {props.icon === "Experience" ? <Skills /> : null}
+        {/** <small>{props.name}</small> */}
       </div>
     </a>
   );

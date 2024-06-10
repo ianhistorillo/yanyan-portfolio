@@ -4,8 +4,6 @@
 
 .flexi-header {
   position: sticky;
-  max-height: 100vh;
-  height: 100vh;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -23,10 +21,29 @@
     -webkit-text-fill-color: transparent;
     animation: gradient 3s linear infinite;
   }
+  &-number-one {
+    font-size: 1.5rem;
+    color: $secondary;
+  }
   &-title {
     font-size: 2.5rem;
-    color: $white;
+    color: $white-variant1;
     margin-bottom: 0;
+    &-one {
+      @include font-apercu-bold;
+      font-weight: 800;
+      color: $white-variant2;
+    }
+    &-about {
+      font-size: 26px;
+      color: $white-variant1;
+      margin-bottom: 2rem;
+    }
+    &-experience {
+      font-size: 26px;
+      color: $white-variant1;
+      margin-bottom: 3rem;
+    }
   }
 
   .side-nav {
@@ -55,10 +72,10 @@
       &:hover {
         span.line {
           width: 4rem;
-          background-color: $white;
+          background-color: rgb(226 232 240);
         }
         span.text {
-          color: $white;
+          color: rgb(226 232 240);
         }
       }
     }
@@ -66,18 +83,18 @@
     div.active > span.line {
       width: 4rem;
       height: 1px;
-      background-color: $white;
+      background-color: rgb(226 232 240);
     }
 
     div.active > span.text {
       padding-left: 1rem;
-      color: $white;
+      color: rgb(226 232 240);
     }
     /** inactive section **/
     div > span.line {
       width: 2rem;
       height: 1px;
-      background-color: rgba($white, 0.5);
+      background-color: rgb(100 116 139);
 
       &.transition-all {
         transition-property: all;
@@ -88,18 +105,20 @@
 
     div > span.text {
       padding-left: 1rem;
-      color: rgba($white, 0.5);
+      color: rgb(100 116 139);
       &:hover {
-        color: $white;
+        color: $white-variant1;
       }
     }
   }
 }
 
 .greetings {
-  font-size: 2.5rem;
-  color: $white;
-  margin-bottom: 6rem;
+  font-size: 1.5rem;
+  color: $secondary;
+  margin-bottom: 0;
+  margin-top: 5%;
+
   @include mobile-sm {
     font-size: 1rem;
     margin-bottom: 1rem;
@@ -108,49 +127,92 @@
   }
 }
 
+.experience-container {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 100px;
+  align-self: center;
+}
+
 .content {
-  font-size: 2.5rem;
-  color: $white;
+  font-size: 1rem;
+  color: $white-variant1;
   line-height: 1.5;
   margin-bottom: 6rem;
 
-  &-page {
-    @include font-apercu-light;
-    font-size: 1rem;
-    color: $white;
-    max-height: 70vh;
-    height: 70vh;
-    overflow: auto;
+  .pangalan,
+  .trabaho {
+    @include font-apercu-bold;
+    font-weight: 800;
+    font-size: 66px;
+  }
 
-    &::-webkit-scrollbar {
-      display: none;
-    }
+  .pangalan {
+    color: $white-variant2;
+  }
 
-    #how-it-all-started {
-      padding-top: 40%;
-    }
+  .trabaho {
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+  }
 
-    #goals {
-      padding-top: 55%;
-    }
+  .brief-background {
+    font-size: 2rem;
+  }
 
-    #experience {
-      margin-top: 40%;
-
-      .experience-item {
+  &-experience {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .experience-tab {
+      &-side {
+        @include font-apercu-light;
+        color: $white-variant2;
+        font-size: 14px;
+        width: 25%;
         display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        height: 145px;
+        &-item {
+          padding: 1rem 1rem 1rem 1rem;
+          border-left: 1px solid rgba($white-variant1, 0.5);
+          border-width: 2px;
+          &:hover {
+            cursor: pointer;
+            background-color: rgba($white-variant1, 0.5);
+            transition: all 500ms;
+          }
+          &.active {
+            border-left: 1px solid $secondary;
+            border-width: 2px;
+          }
+        }
+      }
+      &-content {
+        width: 75%;
+      }
+    }
+    #experience {
+      .experience-item {
+        display: none;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: center;
         margin-bottom: 4rem;
+        &.active {
+          display: flex;
+        }
       }
 
       .experience-year {
+        @include font-apercu-medium;
         width: 25%;
         color: rgba($white-variant1, 0.5);
         letter-spacing: 0.025em;
         font-size: 0.75rem;
         line-height: 1rem;
         margin-top: 2px;
+        margin-bottom: 1rem;
 
         span {
           vertical-align: middle;
@@ -172,9 +234,10 @@
 
         h3 {
           @include font-apercu-light;
+          color: $white-variant2;
           font-size: 16px;
           line-height: 1.375;
-          margin-bottom: 1rem;
+          padding-top: 0.75rem;
         }
 
         .visit {
@@ -186,6 +249,7 @@
         }
 
         .experience-summary {
+          @include font-apercu-light;
           font-size: 14px;
           color: rgba($white-variant1, 0.5);
           line-height: 1.5;
@@ -194,6 +258,7 @@
       }
 
       .experience-techstack {
+        @include font-apercu-light;
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
@@ -214,6 +279,26 @@
         }
       }
     }
+  }
+
+  &-page {
+    @include font-apercu-light;
+    font-size: 1rem;
+    color: $white-variant1;
+
+    &.project-page {
+      max-height: 70vh;
+      height: 70vh;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     #other-projects {
       display: flex;
@@ -228,6 +313,9 @@
         &-header,
         &-description {
           width: 100%;
+          ul {
+            list-style-type: none;
+          }
         }
         &-header {
           @include font-apercu-medium;
@@ -322,7 +410,7 @@
 
 .get-in-touch {
   font-size: 1.5rem;
-  color: $white;
+  color: $white-variant1;
   line-height: 1.5;
 
   .email-add {

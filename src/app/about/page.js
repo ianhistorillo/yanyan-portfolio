@@ -11,6 +11,7 @@ import Navigation from "../components/Navigation/Navigation";
 // About Page Client Side Components
 import AboutHeader from "../components/Pages/AboutHeader";
 import AboutContent from "../components/Pages/AboutContent";
+import SocialNavigation from "../components/Navigation/SocialNavigation";
 
 import {
   Link,
@@ -46,6 +47,7 @@ const About = () => {
         <AboutHeader />
         <AboutContent />
         <Navigation activePage="About" />
+        <SocialNavigation />
       </div>
     </div>
   );

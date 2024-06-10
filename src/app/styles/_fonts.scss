@@ -18,6 +18,13 @@
   src: url("../../fonts/apercu/Apercu\ Bold.otf");
 }
 
+@font-face {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  src: url();
+}
+
 @mixin font-apercu-light {
   font-family: "Apercu Light";
   font-style: normal;

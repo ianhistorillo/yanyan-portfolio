@@ -9,6 +9,7 @@ import "../styles/components/_pages.scss";
 import Navigation from "../components/Navigation/Navigation";
 import ProjectSideNav from "../components/Pages/ProjectSideNav";
 import ProjectContent from "../components/Pages/ProjectContent";
+import SocialNavigation from "../components/Navigation/SocialNavigation";
 
 const Projects = () => {
   return (
@@ -17,6 +18,7 @@ const Projects = () => {
         <ProjectSideNav />
         <ProjectContent />
         <Navigation activePage="Projects" />
+        <SocialNavigation />
       </div>
     </div>
   );

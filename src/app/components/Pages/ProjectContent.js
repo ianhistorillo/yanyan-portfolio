@@ -15,8 +15,8 @@ import Visit from "../Icons/Visit";
 
 const ProjectContent = () => {
   return (
-    <div className="i-col80 i-fr i-pd-top-10">
-      <div id="projectsElement" className="content-page">
+    <div className="i-col80 i-fr">
+      <div id="projectsElement" className="content-page project-page">
         <div id="featured-projects">
           <div className="featured-projects-container">
             <div className="featured-projects-image">
@@ -103,39 +103,81 @@ const ProjectContent = () => {
         </div>
         <div id="other-projects">
           <div className="other-projects-container">
-            <div className="other-projects-header"> React Chat App </div>
+            <div className="other-projects-header">
+              {" "}
+              Interactive Property Plans{" "}
+            </div>
             <div className="other-projects-description">
-              I wanted to learn how to integrate real-time communication in my
-              apps. I used Socket.io to create a simple chat app in React. It
-              was a little bit stressful learning this technology without having
-              prior background or without any knowledge on where/how to get
-              started but I made it work so it's a little achievement for me :){" "}
+              This is my current or latest projects I'm involved with - I am
+              developing interactive property plans for villages, apartments,
+              townhouses and etc. The app showcase the property details,
+              downloadable brochures and even the real time map where the
+              property currently located.
             </div>
             <div className="other-projects-stack">
-              <div className="other-projects-item"> Git@Github</div>
-              <div className="other-projects-item"> HTML </div>
-              <div className="other-projects-item"> CSS </div>
-              <div className="other-projects-item"> Sass </div>
+              <div className="other-projects-item"> Git@Github </div>
+              <div className="other-projects-item"> React </div>
               <div className="other-projects-item"> Javascript</div>
-              <div className="other-projects-item"> Vercel</div>
+              <div className="other-projects-item"> Symfony </div>
+              <div className="other-projects-item"> Google Cloud Platform </div>
             </div>
           </div>
           <div className="other-projects-container">
-            <div className="other-projects-header"> React Chat App </div>
+            <div className="other-projects-header">
+              {" "}
+              Website - FFC Foundation{" "}
+            </div>
             <div className="other-projects-description">
-              I wanted to learn how to integrate real-time communication in my
-              apps. I used Socket.io to create a simple chat app in React. It
-              was a little bit stressful learning this technology without having
-              prior background or without any knowledge on where/how to get
-              started but I made it work so it's a little achievement for me :){" "}
+              Building websites for corporate business is not new to me. But
+              building the website for my mother church and foundation is always
+              a privelege and pleasure to me. I used WordPress and Elementor to
+              build this website quickly. The write-ups, stories and articles
+              are the core feature of this website so I mostly highlighted the
+              blog page.
             </div>
             <div className="other-projects-stack">
-              <div className="other-projects-item"> Git@Github</div>
+              <div className="other-projects-item"> WordPress </div>
               <div className="other-projects-item"> HTML </div>
               <div className="other-projects-item"> CSS </div>
-              <div className="other-projects-item"> Sass </div>
-              <div className="other-projects-item"> Javascript</div>
-              <div className="other-projects-item"> Vercel</div>
+              <div className="other-projects-item"> PHP </div>
+              <div className="other-projects-item"> Elementor </div>
+              <div className="other-projects-item"> Marketing Plugin </div>
+            </div>
+          </div>
+          <div className="other-projects-container">
+            <div className="other-projects-header">Tasks Tracker</div>
+            <div className="other-projects-description">
+              I developed this app to helped me organize myself when it comes to
+              tracking my tasks/time everyday. I used this app more often but
+              when I learn how to used notion app, I started to loved it and
+              quickly transition to that.
+            </div>
+            <div className="other-projects-stack">
+              <div className="other-projects-item"> React Native </div>
+              <div className="other-projects-item"> Expo </div>
+              <div className="other-projects-item"> Javascript </div>
+              <div className="other-projects-item"> Git@Github </div>
+            </div>
+          </div>
+          <div className="other-projects-container">
+            <div className="other-projects-header"> More Websites </div>
+            <div className="other-projects-description">
+              I do have a lot of websites that I built before but this is the
+              only websites I am allowed to showed you:
+              <ul>
+                <li>FFC Foundation - https://ffcfoundationph.com/</li>
+                <li>Bizcap AU - https://www.bizcap.com.au/ </li>
+                <li>Bizcap NZ - https://www.bizcap.nz/ </li>
+              </ul>
+            </div>
+            <div className="other-projects-stack">
+              <div className="other-projects-item"> WordPress </div>
+              <div className="other-projects-item"> Web Builder </div>
+              <div className="other-projects-item"> Elementor </div>
+              <div className="other-projects-item"> Divi </div>
+              <div className="other-projects-item"> HTML </div>
+              <div className="other-projects-item"> CSS </div>
+              <div className="other-projects-item"> Javascript </div>
             </div>
           </div>
         </div>

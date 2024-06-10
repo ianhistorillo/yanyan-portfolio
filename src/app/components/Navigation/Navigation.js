@@ -1,7 +1,23 @@
+"use client";
+
 import React from "react";
 import NavItem from "./NavItem";
 
+import { useEffect } from "react";
+
 const Navigation = (props) => {
+  useEffect(() => {
+    function update(e) {
+      var x = e.clientX || e.touches[0].clientX;
+      var y = e.clientY || e.touches[0].clientY;
+
+      document.documentElement.style.setProperty("--cursorX", x + "px");
+      document.documentElement.style.setProperty("--cursorY", y + "px");
+    }
+
+    document.addEventListener("mousemove", update);
+    document.addEventListener("touchmove", update);
+  }, []);
   return (
     <div className="navigation">
       <div className="nav">
@@ -19,15 +35,15 @@ const Navigation = (props) => {
             active={props.activePage}
           />
           <NavItem
-            name="Projects"
-            route="/projects"
-            icon="Projects"
+            name="Experience"
+            route="/experience"
+            icon="Experience"
             active={props.activePage}
           />
           <NavItem
-            name="Skills"
-            route="/skills"
-            icon="Skills"
+            name="Projects"
+            route="/projects"
+            icon="Projects"
             active={props.activePage}
           />
         </div>

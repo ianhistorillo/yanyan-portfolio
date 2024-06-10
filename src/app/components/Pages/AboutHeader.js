@@ -14,17 +14,58 @@ const AboutHeader = () => {
   // Function to handle the activation of a link.
   const handleSetActive = (activeElem) => {
     let prevActiveElement = document.querySelector("div.active");
-    console.log(prevActiveElement);
     const currActiveElement = document.getElementById(activeElem);
     prevActiveElement.classList.remove("active");
     currActiveElement.classList.add("active");
   };
 
   return (
-    <div className="i-col50 flexi-header">
+    <div className="i-col60 flexi-header">
       <div className="header">
-        <div className="header-title"> BACKGROUND </div>
-        <div className="side-nav">
+        <div className="header-title-about">
+          {" "}
+          <span className="header-number-one">01. </span>{" "}
+          <span className="header-title-one"> About Me </span>{" "}
+        </div>
+        <div id="parentElement" className="content-page">
+          <Element id="how-it-all-started" name="how-it-all-started">
+            {/* // <p>
+            //   When I was a kid, maybe around grade school, I was fascinated by
+            //   computer machines. I saw one for the very first time in the
+            //   computer shop in my neighborhood. I was curious about how this
+            //   technology worked, and because of that, I dreamed of having one.
+            // </p>
+            // <p>
+            //   But because it was expensive at that time, I couldn't afford to
+            //   have one. However, this did not stop me from trying it out,
+            //   discovering it, and eventually, it carved a path to my passion for
+            //   technology.
+            // </p> */}
+            <p>
+              Hi! I'm Christian Historillo from the Philippines. I love
+              technology in every form and learning new things everyday. My
+              interest in web development starts when I first discovered
+              Friendster - my very first social media platform. Because of
+              friendster, I learn basic HTML and CSS that leads me later on to
+              become a Web developer.
+            </p>
+          </Element>
+          <Element id="goals" name="goals">
+            <p>
+              I'm currently training and studying Mobile Development using React
+              Native and Expo. My goal is to build more application both web and
+              mobile. I'm using Udemy to get certified as a React Native
+              developer and used this to get many side gigs or on my own
+              projects.
+            </p>
+            <p>
+              As a software engineer, my learning doesn't stop here. My goal is
+              to keep myself updated in the latest tech and trend so I can build
+              more efficient and scalable applications.
+            </p>
+          </Element>
+        </div>
+        {/* <div className="side-nav">
           <Link
             to="how-it-all-started"
             containerId="parentElement"
@@ -67,7 +108,7 @@ const AboutHeader = () => {
               <span className="text"> Experience </span>
             </div>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );
