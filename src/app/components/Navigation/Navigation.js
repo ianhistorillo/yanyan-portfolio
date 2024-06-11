@@ -6,18 +6,17 @@ import NavItem from "./NavItem";
 import { useEffect } from "react";
 
 const Navigation = (props) => {
-  useEffect(() => {
-    function update(e) {
-      var x = e.clientX || e.touches[0].clientX;
-      var y = e.clientY || e.touches[0].clientY;
+  useEffect(() => {}, []);
+  function update(e) {
+    var x = e.clientX;
+    var y = e.clientY;
 
-      document.documentElement.style.setProperty("--cursorX", x + "px");
-      document.documentElement.style.setProperty("--cursorY", y + "px");
-    }
+    document.documentElement.style.setProperty("--cursorX", x + "px");
+    document.documentElement.style.setProperty("--cursorY", y + "px");
+  }
 
-    document.addEventListener("mousemove", update);
-    document.addEventListener("touchmove", update);
-  }, []);
+  document.addEventListener("mousemove", update);
+  document.addEventListener("touchmove", update);
   return (
     <div className="navigation">
       <div className="nav">
