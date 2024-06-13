@@ -24,9 +24,4 @@ const About = () => {
   );
 };
 
-export const metadata = {
-  title: "Christian Historillo",
-  description: "This is my app",
-};
-
 export default About;

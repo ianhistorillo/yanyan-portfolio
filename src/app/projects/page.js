@@ -9,11 +9,6 @@ import ProjectSideNav from "../components/Pages/ProjectSideNav";
 import ProjectContent from "../components/Pages/ProjectContent";
 import SocialNavigation from "../components/Navigation/SocialNavigation";
 
-export const metadata = {
-  title: "Christian Historillo",
-  description: "This is my app",
-};
-
 const Projects = () => {
   return (
     <div className="main projects">

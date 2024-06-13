@@ -1,19 +1,9 @@
-import Image from "next/image";
 import "./styles/_main.scss";
 import "./styles/components/_navigation.scss";
 import "./styles/components/_pages.scss";
 import Navigation from "./components/Navigation/Navigation";
-import Philippines from "./components/Icons/Philippines";
-import LinkedIn from "./components/Icons/LinkedIn";
-import Github from "./components/Icons/Github";
 import SocialNavigation from "./components/Navigation/SocialNavigation";
-import Head from "next/head"; // then add the `NextSeo` at any `pages/` that
 import React from "react";
-
-export const metadata = {
-  title: "Christian Historillo",
-  description: "This is my app",
-};
 
 export default function Home() {
   return (
