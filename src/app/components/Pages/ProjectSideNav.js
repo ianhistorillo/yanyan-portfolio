@@ -20,9 +20,13 @@ const ProjectSideNav = () => {
   };
 
   return (
-    <div className="i-col20 flexi-header">
+    <div className="i-col30 flexi-header">
       <div className="header">
-        <div className="header-title"> PROJECTS </div>
+        <div className="header-title-about">
+          {" "}
+          <span className="header-number-one">03. </span>{" "}
+          <span className="header-title-one"> Projects I've Built </span>{" "}
+        </div>
         <div className="side-nav projects-nav">
           <Link
             to="featured-projects"

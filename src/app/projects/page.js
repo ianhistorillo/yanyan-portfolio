@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useEffect } from "react";
+import React from "react";
 import "../styles/_main.scss";
 import "../styles/components/_navigation.scss";
 import "../styles/components/_pages.scss";
@@ -11,9 +9,14 @@ import ProjectSideNav from "../components/Pages/ProjectSideNav";
 import ProjectContent from "../components/Pages/ProjectContent";
 import SocialNavigation from "../components/Navigation/SocialNavigation";
 
+export const metadata = {
+  title: "Christian Historillo",
+  description: "This is my app",
+};
+
 const Projects = () => {
   return (
-    <div className="main">
+    <div className="main projects">
       <div className="i-col100 i-container-aboutpage">
         <ProjectSideNav />
         <ProjectContent />

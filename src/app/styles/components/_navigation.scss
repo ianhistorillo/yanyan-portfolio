@@ -7,6 +7,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  @include mobile-lg {
+    background-color: $primary;
+    bottom: 0;
+    padding: 1rem;
+    transform: translate(-50%, 0%);
+  }
 }
 
 .nav {
@@ -58,6 +64,9 @@
   right: auto;
   z-index: 10;
   color: $white-variant1;
+  @include mobile-lg {
+    display: none;
+  }
   ul {
     display: flex;
     flex-direction: column;

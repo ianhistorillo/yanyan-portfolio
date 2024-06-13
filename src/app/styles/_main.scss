@@ -11,6 +11,39 @@
   justify-content: space-between;
   align-items: center;
   margin: auto;
+
+  &.about {
+    @include mobile-lg {
+      padding-top: 20%;
+      padding-bottom: 20%;
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &.experience {
+    @include mobile-lg {
+      padding-top: 20%;
+      padding-bottom: 20%;
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &.projects {
+    @include mobile-lg {
+      padding-top: 20%;
+      padding-bottom: 20%;
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+      width: 100%;
+    }
+  }
 }
 
 .description {

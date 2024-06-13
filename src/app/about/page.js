@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useEffect } from "react";
+import React from "react";
 import "../styles/_main.scss";
 import "../styles/components/_navigation.scss";
 import "../styles/components/_pages.scss";
@@ -13,36 +11,9 @@ import AboutHeader from "../components/Pages/AboutHeader";
 import AboutContent from "../components/Pages/AboutContent";
 import SocialNavigation from "../components/Navigation/SocialNavigation";
 
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-} from "react-scroll";
-
 const About = () => {
-  // useEffect is used to perform side effects in functional components.
-  // Here, it's used to register scroll events and update scrollSpy when the component mounts.
-  useEffect(() => {
-    // Registering the 'begin' event and logging it to the console when triggered.
-    Events.scrollEvent.register("begin");
-
-    // Registering the 'end' event and logging it to the console when triggered.
-    Events.scrollEvent.register("end");
-
-    // Updating scrollSpy when the component mounts.
-    scrollSpy.update();
-
-    // Returning a cleanup function to remove the registered events when the component unmounts.
-    return () => {
-      Events.scrollEvent.remove("begin");
-      Events.scrollEvent.remove("end");
-    };
-  }, []);
   return (
-    <div className="main">
+    <div className="main about">
       <div className="i-col100 i-container-aboutpage">
         <AboutHeader />
         <AboutContent />
@@ -51,6 +22,11 @@ const About = () => {
       </div>
     </div>
   );
+};
+
+export const metadata = {
+  title: "Christian Historillo",
+  description: "This is my app",
 };
 
 export default About;

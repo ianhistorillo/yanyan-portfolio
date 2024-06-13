@@ -56,6 +56,9 @@
     justify-content: flex-start;
     width: 50%;
     margin-top: 1rem;
+    @include mobile-lg {
+      margin-bottom: 1rem;
+    }
     &.projects-nav {
       width: auto;
     }
@@ -123,7 +126,6 @@
     font-size: 1rem;
     margin-bottom: 1rem;
     margin-top: 0;
-    text-align: center;
   }
 }
 
@@ -132,6 +134,9 @@
   flex-flow: row wrap;
   padding: 100px;
   align-self: center;
+  @include mobile-lg {
+    padding: 0;
+  }
 }
 
 .content {
@@ -145,6 +150,10 @@
     @include font-apercu-bold;
     font-weight: 800;
     font-size: 66px;
+    @include mobile-lg {
+      font-size: clamp(30px, 8vw, 70px);
+      line-height: 1.1;
+    }
   }
 
   .pangalan {
@@ -154,16 +163,30 @@
   .trabaho {
     margin-top: -1rem;
     margin-bottom: 2rem;
+    @include mobile-lg {
+      margin-top: 0.5rem;
+    }
   }
 
   .brief-background {
     font-size: 2rem;
+    @include mobile-lg {
+      font-size: 16px;
+    }
+  }
+
+  @include mobile-lg {
+    padding: 0px 25px;
   }
 
   &-experience {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+
+    @include mobile-lg {
+      display: block;
+    }
     .experience-tab {
       &-side {
         @include font-apercu-light;
@@ -174,10 +197,39 @@
         flex-flow: column;
         justify-content: flex-start;
         height: 145px;
+
+        /* width */
+        &::-webkit-scrollbar {
+          width: 12px;
+          height: 8px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: rgba($white-variant2, 0.5);
+          border-radius: 10px;
+          padding-top: 5px;
+        }
+
+        @include mobile-lg {
+          flex-flow: nowrap;
+          justify-content: flex-start;
+          // max-width: 700px;
+          width: 350px;
+          height: auto;
+          padding-bottom: 5px;
+          margin-bottom: 30px;
+          overflow-x: auto;
+        }
         &-item {
           padding: 1rem 1rem 1rem 1rem;
           border-left: 1px solid rgba($white-variant1, 0.5);
           border-width: 2px;
+          @include mobile-lg {
+            border-left: 0;
+            border-bottom: 1px solid rgba($white-variant1, 0.5);
+            min-width: 107px;
+          }
           &:hover {
             cursor: pointer;
             background-color: rgba($white-variant1, 0.5);
@@ -186,11 +238,19 @@
           &.active {
             border-left: 1px solid $secondary;
             border-width: 2px;
+            @include mobile-lg {
+              border-left: 0;
+              border-bottom: 1px solid rgba($white-variant1, 1);
+              border-width: 2px;
+            }
           }
         }
       }
       &-content {
         width: 75%;
+        @include mobile-lg {
+          width: 90%;
+        }
       }
     }
     #experience {
@@ -225,6 +285,10 @@
         margin-top: 2px;
         margin-bottom: 1rem;
 
+        @include mobile-lg {
+          width: 100%;
+        }
+
         span {
           vertical-align: middle;
         }
@@ -242,6 +306,10 @@
 
       .experience-company {
         width: 75%;
+
+        @include mobile-lg {
+          width: 100%;
+        }
 
         h3 {
           @include font-apercu-light;
@@ -337,21 +405,41 @@
       max-height: 70vh;
       height: 70vh;
       overflow: auto;
+      padding-right: 15px;
 
-      &::-webkit-scrollbar {
-        display: none;
+      @include mobile-lg {
+        display: block;
+        padding-right: 15px;
       }
+
+      /* width */
+      &::-webkit-scrollbar {
+        width: 12px;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: rgba($white-variant1, 0.5);
+        border-radius: 10px;
+      }
+
+      // &::-webkit-scrollbar {
+      //   display: none;
+      // }
     }
 
-    &::-webkit-scrollbar {
-      display: none;
-    }
+    // &::-webkit-scrollbar {
+    //   display: none;
+    // }
 
     #other-projects {
       display: flex;
       flex-flow: row wrap;
       justify-content: flex-start;
       padding-left: 5%;
+      @include mobile-lg {
+        padding-left: 0;
+      }
 
       .other-projects {
         &-container {
@@ -389,22 +477,42 @@
             padding: 3px 10px 3px 10px;
             border-radius: 5px;
             line-height: 1.6;
+            @include mobile-lg {
+              margin-bottom: 10px;
+            }
           }
         }
       }
     }
 
     #featured-projects {
+      @include mobile-lg {
+        padding-top: 1rem;
+      }
       .featured-projects {
         &-container {
           display: flex;
           flex-flow: row wrap;
           justify-content: flex-start;
           margin-bottom: 5rem;
+          margin-left: 5%;
+          padding: 1rem;
+          @include mobile-lg {
+            margin-left: 0;
+            padding: 0;
+          }
+          &:hover {
+            background-color: rgba($white-variant3, 0.1);
+            border-radius: 5px;
+            border: 1px solid rgba($white-variant3, 0.1);
+          }
         }
         &-image {
           width: 50%;
-          padding-left: 5%;
+          @include mobile-lg {
+            margin-top: 1rem;
+            width: 100%;
+          }
           img {
             width: 100% !important;
             height: auto !important;
@@ -413,6 +521,11 @@
         &-description {
           width: 50%;
           padding-left: 5%;
+          @include mobile-lg {
+            margin-top: 1rem;
+            width: 100%;
+            padding-left: 0;
+          }
           .title {
             @include font-apercu-medium;
             font-size: 20px;
@@ -460,6 +573,10 @@
   color: $white-variant1;
   line-height: 1.5;
 
+  @include mobile-lg {
+    display: none;
+  }
+
   .email-add {
     color: #f1f8cf;
     text-decoration: underline;
@@ -505,5 +622,87 @@
   }
   .st4 {
     fill: #0038a8;
+  }
+}
+
+.ianimage-container {
+  position: relative;
+  text-align: center;
+  max-width: 500px;
+  padding-left: 3rem;
+  @include mobile-lg {
+    max-width: 300px;
+    padding-left: 0;
+  }
+  .ianimage-outer-wrapper {
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: 4px;
+    background-color: $secondary;
+    &::after {
+      border: 2px solid $secondary;
+      top: 14px;
+      left: 14px;
+      z-index: -1;
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    &::before {
+      top: 0px;
+      left: 0px;
+      background-color: $primary;
+      mix-blend-mode: screen;
+    }
+    .ianimage-inner-wrapper {
+      position: relative;
+      border-radius: 4px;
+      mix-blend-mode: multiply;
+      filter: grayscale(100%) contrast(1);
+      transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+      max-width: 100%;
+      text-align: center;
+      img {
+        display: block;
+        position: static;
+        bottom: 0;
+        height: 100%;
+        left: 0;
+        margin: 0;
+        max-width: none;
+        padding: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    .ianimage-outer-wrapper {
+      &::after {
+        top: 20px;
+        left: 20px;
+      }
+    }
+    .ianimage-inner-wrapper {
+      mix-blend-mode: normal;
+      filter: none;
+    }
+  }
+
+  img {
+    width: 75%;
+    height: auto;
   }
 }

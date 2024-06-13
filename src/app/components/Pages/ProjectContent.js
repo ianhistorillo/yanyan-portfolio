@@ -15,65 +15,69 @@ import Visit from "../Icons/Visit";
 
 const ProjectContent = () => {
   return (
-    <div className="i-col80 i-fr">
+    <div className="i-col70 i-fr">
       <div id="projectsElement" className="content-page project-page">
         <div id="featured-projects">
-          <div className="featured-projects-container">
-            <div className="featured-projects-image">
-              <Image
-                src="/img/earthmeter-revised-project.png"
-                width={1000}
-                height={1000}
-                alt="Picture of the author"
-              />
-            </div>
-            <div className="featured-projects-description">
-              <span className="title"> Earthmeter.io </span>
-              <p>
-                {" "}
-                At first look, this is only a simple responsive landing page,
-                but this is the first good landing page I've created. On this
-                project, I've learned how to used Typescript for the first time
-                and other tech.
-              </p>
+          <a href="https://earthmeter.io/" target="_blank">
+            <div className="featured-projects-container">
+              <div className="featured-projects-image">
+                <Image
+                  src="/img/earthmeter-revised-project.png"
+                  width={1000}
+                  height={1000}
+                  alt="Picture of the author"
+                />
+              </div>
+              <div className="featured-projects-description">
+                <span className="title"> Earthmeter.io </span>
+                <p>
+                  {" "}
+                  At first look, this is only a simple responsive landing page,
+                  but this is the first good landing page I've created. On this
+                  project, I've learned how to used Typescript for the first
+                  time and other tech.
+                </p>
 
-              <div className="featured-projects-stack">
-                <div className="other-projects-item"> Git@Github</div>
-                <div className="other-projects-item"> React </div>
-                <div className="other-projects-item"> Node </div>
-                <div className="other-projects-item"> TypeScript </div>
+                <div className="featured-projects-stack">
+                  <div className="other-projects-item"> Git@Github</div>
+                  <div className="other-projects-item"> React </div>
+                  <div className="other-projects-item"> Node </div>
+                  <div className="other-projects-item"> TypeScript </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="featured-projects-container">
-            <div className="featured-projects-image">
-              <Image
-                src="/img/ezpayzee-revised-project.png"
-                width={1000}
-                height={1000}
-                alt="Picture of the author"
-              />
-            </div>
-            <div className="featured-projects-description">
-              <span className="title"> EzPayPlus</span>
-              <p>
-                {" "}
-                This project is a web based payroll system. This is the first
-                big project I've created during my junior years.
-              </p>
-              <p>
-                {" "}
-                This is featured because this is one of our main product and
-                many clients availed it.
-              </p>
-              <div className="featured-projects-stack">
-                <div className="other-projects-item"> Git@Github</div>
-                <div className="other-projects-item"> HTML </div>
-                <div className="other-projects-item"> PHP </div>
-                <div className="other-projects-item"> Javascript </div>
+          </a>
+          <a href="https://tejnat.com" target="_blank">
+            <div className="featured-projects-container">
+              <div className="featured-projects-image">
+                <Image
+                  src="/img/ezpayzee-revised-project.png"
+                  width={1000}
+                  height={1000}
+                  alt="Picture of the author"
+                />
+              </div>
+              <div className="featured-projects-description">
+                <span className="title"> EzPayPlus</span>
+                <p>
+                  {" "}
+                  This project is a web based payroll system. This is the first
+                  big project I've created during my junior years.
+                </p>
+                <p>
+                  {" "}
+                  This is featured because this is one of our main product and
+                  many clients availed it.
+                </p>
+                <div className="featured-projects-stack">
+                  <div className="other-projects-item"> Git@Github</div>
+                  <div className="other-projects-item"> HTML </div>
+                  <div className="other-projects-item"> PHP </div>
+                  <div className="other-projects-item"> Javascript </div>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
 
           <div className="featured-projects-container">
             <div className="featured-projects-image">

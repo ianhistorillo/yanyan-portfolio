@@ -25,7 +25,7 @@ const AboutHeader = () => {
         <div className="header-title-about">
           {" "}
           <span className="header-number-one">01. </span>{" "}
-          <span className="header-title-one"> About Me </span>{" "}
+          <span className="header-title-one"> My Background </span>{" "}
         </div>
         <div id="parentElement" className="content-page">
           {/* // <p>
