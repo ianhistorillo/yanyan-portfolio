@@ -12,12 +12,6 @@ import {
 
 const AboutHeader = () => {
   // Function to handle the activation of a link.
-  const handleSetActive = (activeElem) => {
-    let prevActiveElement = document.querySelector("div.active");
-    const currActiveElement = document.getElementById(activeElem);
-    prevActiveElement.classList.remove("active");
-    currActiveElement.classList.add("active");
-  };
 
   return (
     <div className="i-col60 flexi-header">
