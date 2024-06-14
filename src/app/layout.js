@@ -25,13 +25,13 @@ export default function RootLayout({ children }) {
           property="og:image"
           content={`https://ianhistorillo-portfolio-image.s3.eu-north-1.amazonaws.com/public/img/metaimage-ian.jpg`}
         />
-        <meta name="twitter:title" content="Christian Historillo" />
+        <meta property="twitter:title" content="Christian Historillo" />
         <meta
-          name="twitter:description"
+          property="twitter:description"
           content="I thrive on turning ideas into digital reality - with a blend of creativity and technical prowess, I craft seamless web experiences that captivate and engage users."
         />
         <meta
-          name="twitter:image"
+          property="twitter:image"
           content={`https://ianhistorillo-portfolio-image.s3.eu-north-1.amazonaws.com/public/img/metaimage-ian.jpg`}
         />
       </head>
