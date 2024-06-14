@@ -14,7 +14,10 @@ export default function RootLayout({ children }) {
           property="og:description"
           content="I thrive on turning ideas into digital reality - with a blend of creativity and technical prowess, I craft seamless web experiences that captivate and engage users."
         />
-        <meta property="og:image" content="image_url_here" />
+        <meta
+          property="og:image"
+          content={`https://ianhistorillo-portfolio-image.s3.eu-north-1.amazonaws.com/public/img/metaimage-ian.jpg`}
+        />
       </head>
       <body>{children}</body>
     </html>

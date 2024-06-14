@@ -22,7 +22,7 @@ const ProjectContent = () => {
             <div className="featured-projects-container">
               <div className="featured-projects-image">
                 <Image
-                  src="/img/earthmeter-revised-project.png"
+                  src={`https://ianhistorillo-portfolio-image.s3.eu-north-1.amazonaws.com/public/img/earthmeter-revised-project.png`}
                   width={1000}
                   height={1000}
                   alt="Picture of the author"
@@ -51,7 +51,7 @@ const ProjectContent = () => {
             <div className="featured-projects-container">
               <div className="featured-projects-image">
                 <Image
-                  src="/img/ezpayzee-revised-project.png"
+                  src={`https://ianhistorillo-portfolio-image.s3.eu-north-1.amazonaws.com/public/img/ezpayzee-revised-project.png`}
                   width={1000}
                   height={1000}
                   alt="Picture of the author"
@@ -82,7 +82,7 @@ const ProjectContent = () => {
           <div className="featured-projects-container">
             <div className="featured-projects-image">
               <Image
-                src="/img/expense-revised-project.png"
+                src={`https://ianhistorillo-portfolio-image.s3.eu-north-1.amazonaws.com/public/img/expense-revised-project.png`}
                 width={1000}
                 height={1000}
                 alt="Picture of the author"
