@@ -5,10 +5,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <title>Christian Historillo</title>
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@tristaan1204" />
-        <meta name="twitter:site" content="@tristaan1204" />
-        <meta name="twitter:url" content="https://ianhistorillo.vercel.app/" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:creator" content="@tristaan1204" />
+        <meta property="twitter:site" content="@tristaan1204" />
+        <meta
+          property="twitter:url"
+          content="https://ianhistorillo.vercel.app/"
+        />
         <meta
           name="description"
           content="I thrive on turning ideas into digital reality - with a blend of creativity and technical prowess, I craft seamless web experiences that captivate and engage users."
