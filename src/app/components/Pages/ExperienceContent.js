@@ -58,14 +58,21 @@ const ExperienceContent = () => {
             onClick={() => handleActiveExperience("alpax")}
           >
             {" "}
-            Alpax Software Solutions{" "}
+            Alpax{" "}
           </div>
         </div>
         <div id="experience" className="experience-tab-content">
           <div id="flexisource-insitelogic" className="experience-item active">
             <div className="experience-company">
               <h3>
-                React & PHP Developer · Flexisource IT / InsiteLogic
+                React & PHP Developer ·{" "}
+                <a href="https://flexisourceit.com.au/" target="_blank">
+                  Flexisource IT
+                </a>
+                /{" "}
+                <a href="https://insitelogic.com.au/" target="_blank">
+                  InsiteLogic
+                </a>
                 <span className="visit">
                   <Visit />
                 </span>
@@ -107,12 +114,14 @@ const ExperienceContent = () => {
           </div>
           <div id="flexisource" className="experience-item">
             <div className="experience-company">
-              <h3>
-                Full-stack Developer · Flexisource IT
-                <span className="visit">
-                  <Visit />
-                </span>
-              </h3>
+              <a href="https://flexisourceit.com.au/" target="_blank">
+                <h3>
+                  Full-stack Developer · Flexisource IT
+                  <span className="visit">
+                    <Visit />
+                  </span>
+                </h3>
+              </a>
               <div className="experience-year">
                 <span>2020</span>
                 <span className="dash"></span>
@@ -150,12 +159,14 @@ const ExperienceContent = () => {
           </div>
           <div id="bayview" className="experience-item">
             <div className="experience-company">
-              <h3>
-                Software Engineer · Bayview Technologies
-                <span className="visit">
-                  <Visit />
-                </span>
-              </h3>
+              <a href="https://bayviewtechnology.com/" target="_blank">
+                <h3>
+                  Software Engineer · Bayview Technologies
+                  <span className="visit">
+                    <Visit />
+                  </span>
+                </h3>
+              </a>
               <div className="experience-year">
                 <span>2019</span>
                 <span className="dash"></span>
@@ -195,12 +206,14 @@ const ExperienceContent = () => {
 
           <div id="alpax" className="experience-item">
             <div className="experience-company">
-              <h3>
-                Application Developer · Alpax Software Solutions
-                <span className="visit">
-                  <Visit />
-                </span>
-              </h3>
+              <a href="https://alpax.ph/" target="_blank">
+                <h3>
+                  Application Developer · Alpax Software Solutions
+                  <span className="visit">
+                    <Visit />
+                  </span>
+                </h3>
+              </a>
               <div className="experience-year">
                 <span>2017</span>
                 <span className="dash"></span>

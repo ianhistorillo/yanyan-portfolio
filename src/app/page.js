@@ -24,6 +24,11 @@ export default function Home() {
                 creativity and technical prowess, I craft seamless web
                 experiences that captivate and engage users.
               </div>
+              <div className="mobile-enquiry">
+                <div className="">
+                  <a href="mailto:ian.webworks@gmail.com">Get In Touch </a>
+                </div>
+              </div>
             </div>
             <div className="get-in-touch">
               <span className="contact-me-text"> Contact me - </span>
