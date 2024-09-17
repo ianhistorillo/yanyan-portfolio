@@ -10,7 +10,7 @@ const AboutContent = () => {
         <div className="ianimage-outer-wrapper">
           <div className="ianimage-inner-wrapper">
             <Image
-              src={`https://ianhistorillo-portfolio-image.s3.eu-north-1.amazonaws.com/public/img/ian-about.jpg`}
+              src={`https://storage.googleapis.com/my-portfolio-281114/assets/img/ian-about.jpg`}
               width={1000}
               height={1000}
               alt="Picture of the author"

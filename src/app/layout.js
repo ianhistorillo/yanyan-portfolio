@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:image"
-          content={`https://ianhistorillo-portfolio-image.s3.eu-north-1.amazonaws.com/public/img/metaimage-ian.jpg`}
+          content={`https://storage.googleapis.com/my-portfolio-281114/assets/metadata/metaimage-ian.jpg`}
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@tristaan1204" />
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="twitter:image"
-          content={`https://ianhistorillo-portfolio-image.s3.eu-north-1.amazonaws.com/public/img/metaimage-ian.jpg`}
+          content={`https://storage.googleapis.com/my-portfolio-281114/assets/metadata/metaimage-ian.jpg`}
         />
       </head>
       <body>{children}</body>

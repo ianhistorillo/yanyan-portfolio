@@ -5,9 +5,9 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "ianhistorillo-portfolio-image.s3.eu-north-1.amazonaws.com",
+        hostname: "storage.googleapis.com",
         port: "",
-        pathname: "/public/img/**",
+        pathname: "/my-portfolio-281114/assets/**",
       },
     ],
   },
