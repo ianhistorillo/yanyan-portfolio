@@ -22,7 +22,7 @@ const ProjectContent = () => {
             <div className="featured-projects-container">
               <div className="featured-projects-image">
                 <Image
-                  src={`https://storage.googleapis.com/my-portfolio-281114/assets/projects/earthmeter-revised-project.png`}
+                  src={`https://public.boxcloud.com/api/2.0/internal_files/1649453286192/versions/1814245503792/representations/png_paged_2048x2048/content/1.png?access_token=1!zBVtfmWcWlkeOJKxzsfOjPKie68prdiFriqhOSVo3TrHyFHvbVfJNLD4-Yqd8Bd_cBsMdByYRpqKPBHR39o0XHtsjeUZ88_jQ5yTKmIPz9BH_jq8ENH6WLNoKgfUgO9u74cKiVVzp1V4uRiMvaDjvegCVNbD4mPgRvykxo5hhgWew9Sb7_RxeHzin3s1yiMpK6J0uKPIToj5pPsg-zoq9sELiTN9qH7mlIUePpIMaAJqlHJ3o_HDT5VjcJhCp8uUzfhGfG3XPGhhw4yaHbOKdA-tVwgrOYbGa3JOzKS4JKTHtd8KXmAFC1YHoa3OBwGd5p71JQow1LDQBkTz-CP9FOqs_g9bGqEJYeBi_yx_LuYQNTxlU__Qufu6_n9Z0ax-nzOo_2M8845BnaMCKI3x-zrtQyMcAJxMCfSm9EqtQh5d3h4VmS4l4te2SfhngJipJdSjU3tI3atMLRp6BMrp8V_Fo9bsKN3vfyWaiiIwu_zsMJVNu1DJJmdauinO5ZBFMKkXTkDvQbTwgNTqAAsEn2t18oVXA0bFkNE08aaR93RCR9Z1jyQC0R19f9CcLz5LGV7y-S5fnwcsa4Owq34SUlka_FVuLf7bU3HBWb5utaT009bwYxr8aD8tIsOZtC02Ea10r5Tb3UVDRuluH4_YZkICLcV1rVssZIYpHL-eLWyBIdNFv95FfSgVIqSJQE1pGnQYJFqjTi0sFk6P65keekNIPQU.&box_client_name=box-content-preview&box_client_version=2.109.0`}
                   width={1000}
                   height={1000}
                   alt="Picture of the author"
@@ -51,7 +51,7 @@ const ProjectContent = () => {
             <div className="featured-projects-container">
               <div className="featured-projects-image">
                 <Image
-                  src={`https://storage.googleapis.com/my-portfolio-281114/assets/projects/ezpayzee-revised-project.png`}
+                  src={`https://public.boxcloud.com/api/2.0/internal_files/1649441994069/versions/1814233822869/representations/png_paged_2048x2048/content/1.png?access_token=1!K_7zC_kr5z5r7HnwW3xNv5Py1XWrFF3R2R1CTe2LOTPmR-Zi6Bwv4KdtNQ1UdiA-vk6-petVvXYElHLksLkwZ-Ch3RybEga0HI4jhTUm0di6g7J4SOTGz4RYqx0PXqcNoJNNWy1-dvJbDf7g4uYk5WixEQlPWaPDvM1hszZYZljIQhUEv1QKt1y-14YSYtrAWH_henntfBD8Tybx_c_nxjC8-WmZOxq8nYI_DcIvBYM4_CCl7Jm96QJvh9_Jn-Hb7VBB2g84wVG0uRbgCnefeht3Qz544FwJAVM3sjxOFFWCjYE_BPWdNh2BUer4Y60Y6TCn3zuKerWAfkSPdbzJoPuqm0BqqiATnok90ZluZCwNpq5Eg1TQnt_pVGFMe0l_hGKLbRtNF8Ffp_oVJph95pH3VA50OueSjz2dlOMsupAMoB0vI9vlEWUpLvfUDUiY3b1a-bDVHH3Ht2NefYAUD7IMf3HcZmzfsRJEgCXmQCZU5W9_-n9dA8yQ3ryOwpKmud5bXzCsMq7Iv9hb8CMtb7oDbMzMC67AygaCuCA3mcTgu3aaqeRW1qNf7emjKCs8oibVL1pBoAhWlCEmOwgR8g0x2SmIHkMj2VQcCl85o4NT5eCdeb44jh9Jx0sohxEcPNPmwUVL-4FA7cWgV8bGnSX5FNmBvm_z2vL6-RPr1PzzPka3CvTKyo-9pjDzp2GROZNEAeGOot3TC_84T0xPLrR-u9E.&box_client_name=box-content-preview&box_client_version=2.109.0`}
                   width={1000}
                   height={1000}
                   alt="Picture of the author"
@@ -82,7 +82,7 @@ const ProjectContent = () => {
           <div className="featured-projects-container">
             <div className="featured-projects-image">
               <Image
-                src={`https://storage.googleapis.com/my-portfolio-281114/assets/projects/expense-revised-project.png`}
+                src={`https://public.boxcloud.com/api/2.0/internal_files/1649448042910/versions/1814239886110/representations/png_paged_2048x2048/content/1.png?access_token=1!VlHRrBrcEqjA80FEwcYUmjmQBfnSEtnWt_Yph-fal7Utw5xQHKzoLJMOqiAMI2qDBi0CdiYpdU2Mw6YDNdjzBwqbW2Y9sE3zMSkpIwxTFJnqkJtrAC1bCQBMx6Chq4poWYwD66d1S2PWojpqDbePVoI20qQ4l-HwROs0JLRBDYh0gsc8J8NDYG1YyyZrXh4uGJuesdM-4E08CIZdFr9sbAi7iMv2sOO_1lCHpmEJojAQLW6glgZHZy9iSqrdyVMFygfHqUOiKjoR_sIykhte6_lp7ZSi3X2IAk_wvi23urZj_sr2AvQEbEbXxAdCco5CWtyl3BVOBXzS0F-81ELV8eGwNgiqHh0HZR07qNTa17Y9YOpQ0ExM5srk0gkww4PunbvQLe8lSjJvEcwjXjj0lXRp3MQYBWRaEwLtcFjDAmQjKKCaIkTWnbL9yYM2-5TZCF-_z_YTOfpcoKtJG6QVJhO7z6NXZm5AFa5ePQRa37KD4QgTPnjdH4Ak0kfMD_3FqaspgXvKKWDpzYqMdelJmpjUeYrALLIXNocrDACxhYWZn_rtNVtZoPNjBPCeqqMGiM4imVfo4WWeKoazz9fRmKgLE8A5jn9UKjBjdHwIfFdTZlGVVKK48yXB1LYhPeDlq70m4MAJOCPjLagEt7uzj1KGUBxv316mLcGUDqWg2jB1LAKYMceIhWE4z4sjEdu6LNO35EfumZnJyKAUvTanA2hqf-w.&box_client_name=box-content-preview&box_client_version=2.109.0`}
                 width={1000}
                 height={1000}
                 alt="Picture of the author"

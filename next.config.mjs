@@ -5,9 +5,9 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "storage.googleapis.com",
+        hostname: "public.boxcloud.com",
         port: "",
-        pathname: "/my-portfolio-281114/assets/**",
+        pathname: "/api/2.0/internal_files/**",
       },
     ],
   },
